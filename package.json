@@ -1,5 +1,5 @@
 {
-  "name": "cypress-shadow-dom-sample",
+  "name": "cypress-snapshot-shadow-dom-repro",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
