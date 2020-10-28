@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script lang="javascript" defer>
+      document.addEventListener('DOMContentLoaded', () => {
+        const contentEl = document.querySelector('#content');
+        const shadow = contentEl.attachShadow({mode: 'open'});
+        const paragraphEl = document.createElement('p');
+        paragraphEl.textContent = 'Hey Cypress! Can you read this?';
+        shadow.appendChild(paragraphEl);
+      });
+    </script>
+  </head>
+  <body>
+    <div>
+      <h1>Cypress Shadow DOM repro</h1>
+      <div id="content"></div>
+    </div>
+  </body>
+</html>
