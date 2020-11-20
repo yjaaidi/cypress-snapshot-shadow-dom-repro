@@ -3,11 +3,13 @@
   <head>
     <script lang="javascript" defer>
       document.addEventListener('DOMContentLoaded', () => {
-        const contentEl = document.querySelector('#content');
-        const shadow = contentEl.attachShadow({mode: 'open'});
-        const paragraphEl = document.createElement('p');
-        paragraphEl.textContent = 'Hey Cypress! Can you read this?';
-        shadow.appendChild(paragraphEl);
+        setTimeout(() => {
+          const contentEl = document.querySelector('#content');
+          const paragraphEl = document.createElement('p');
+          paragraphEl.textContent = 'Hey Cypress! Can you read this?';
+          contentEl.appendChild(paragraphEl);
+          contentEl.classList.add('open');
+        }, 1000)
       });
     </script>
   </head>
